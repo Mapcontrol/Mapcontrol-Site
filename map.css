@@ -1,5 +1,5 @@
 html {
-  height: 100%
+  height: 100%;
 }
 
 body {
@@ -21,10 +21,17 @@ h1, h2, h3, h4, h5 {
   color: #212529
 }
 
+hr {
+  margin-bottom: .2rem;
+}
 
 .card {
 	width: 18rem;
 	border: none;
+}
+
+.card-body {
+  padding: 16px;
 }
 
 .c-1 {
@@ -34,7 +41,6 @@ h1, h2, h3, h4, h5 {
 .grad {
 	background-image: linear-gradient(180deg, rgba(23, 16, 56, 0.0001) 0%, #454547 58.82%);
 }
-
 
 .container {
   max-width: 600px;
@@ -53,12 +59,6 @@ h1, h2, h3, h4, h5 {
   padding-top: 1rem;
   background-color: #fff;
 }
-
-.pricing-header {
-  max-width: 600px;
-}
-
-
 
 .enter-text {
   font-size: 1.7em;
@@ -100,16 +100,32 @@ h1, h2, h3, h4, h5 {
 	box-shadow: 0 4px 12px rgba(66, 135, 245, 0.5)
 }
 
-.shaded:hover {
+.banner-btn:not(:disabled):not(.disabled):active {
+  background-color: white;
+  color: #212529;
+  outline: none;
+  box-shadow: none;
+}
+
+.shaded:hover,
+.shaded:active,
+.shaded:focus {
 	background-color: #116AFF;
 	border-color: #116AFF;
 	box-shadow: none; 
 }
 
-.new-bt:hover {
+.new-bt:hover,
+.new-bt:active,
+.new-bt:focus,
+.new-bt:not(:disabled):not(.disabled):active {
 	border-color: #2d84f7;
 	color: #2d84f7;
 	background-color: #ffffff;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .banner-btn {
@@ -161,8 +177,8 @@ h1, h2, h3, h4, h5 {
     padding-bottom: 2rem;
 }
 
-hr {
-  margin-bottom: .2rem;
+.footer a {
+  color: #6D737C;
 }
 
 .cent-first {
@@ -172,6 +188,8 @@ hr {
 .right-first {
   text-align: right;
 }
+
+
 
 @media (max-width: 47.9375rem) {
   .cent-first, .right-first {
